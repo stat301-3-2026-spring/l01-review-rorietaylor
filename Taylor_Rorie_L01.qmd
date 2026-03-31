@@ -1,8 +1,8 @@
 ---
 title: "L01 Review"
 subtitle: "Data Science 3 with R (STAT 301-3)"
-author: "YOUR NAME"
-pagetitle: "L01 YOUR NAME"
+author: "Rorie Taylor"
+pagetitle: "L01 Rorie Taylor"
 date: today
 
 format:
@@ -25,10 +25,7 @@ citation-location: margin
 
 ::: {.callout-tip icon="false"}
 ## Github Repo Link
-
-To link to your github **repo**sitory, appropriately edit the example link below. Meaning replace `https://your-github-repo-url` with your github repo url. Suggest verifying the link works before submitting.
-
-[https://your-github-repo-url](https://your-github-repo-url)
+[L01 Github Repo Link](https://github.com/stat301-3-2026-spring/l01-review-rorietaylor)
 :::
 
 ## Overview
@@ -57,8 +54,7 @@ Explain the difference between supervised and unsupervised learning.
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
-
+For supervised learning, you have target variable (y) and the predictors. You're using variable x to model the behavior or an external variable. For unsupervised learning, you are trying to learn the pattern of your variable x without linking it to an external variable. You are not trying to predict anything. You don't have a y. You're trying to see if there are any patterns in the dataset.
 :::
 
 ### Question 3 
@@ -191,7 +187,22 @@ Briefly describe how v-fold cross validation with repeats is used to estimate te
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+*Iteration 1*
+Analysis set (treating it as the training set) = fold, 2, 3, 4, 5
+Assessment set (treating it as the test set) = fold 1
+Train on the analysis set, which is folds 2-5 combined.
+Predict on the assessment set, and calculate performance metrics (i.e. cross validation RMSE 1)
+
+Then iterate the above process again
+*Iteration 2*
+Analysis set (treating it as the training set) = fold, 1, 3, 4, 5
+Assessment set (treating it as the test set) = fold 2
+Train on the analysis set, which is folds 1, 3, 4, 5 combined.
+Predict on the assessment set, and calculate performance metrics (i.e. cross validation RMSE 2)
+
+Then take the average of the cross validation RMSE for the numer of folds
+
+
 
 :::
 
@@ -224,7 +235,7 @@ What are two common performance metrics when dealing with a regression ML proble
 ::: {.callout-tip icon="false"}
 ## Solution
 
-YOUR SOLUTION HERE
+Two common performance metrics are RMSE and MAE.
 
 :::
 
